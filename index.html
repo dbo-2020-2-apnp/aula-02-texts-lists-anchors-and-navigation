@@ -5,10 +5,91 @@
   <meta charset="UTF-8" />
   <title>Aula#02</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    dt {
+      font-weight: bold;
+    }
+    dd {
+      font-style: italic;
+    }
+    ul {
+      list-style-type: square;
+    }
+    ol {
+      list-style-type: upper-roman;
+    }
+  </style>
+  <link rel="stylesheet" href="navegacao.css">
 </head>
 
 <body>
-  <h1 class="azul">Template</h1>
+  <span id="topo"></span>
+  <!-- a  anchor âncora -->
+  <a href="http://google.com">Google</a>
+  <a href="https://pt.wikipedia.org/wiki/World_Wide_Web" target="_blank">Wikipedia</a>
+
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li><a href="#glossario">Glossário</a></li>
+      <li><a href="info/internet.html">Info</a></li>
+      <li>Teste</li>
+      <li><a href="dbo.html">DBO</a></li>
+      <li><a href="https://pt.wikipedia.org/wiki/World_Wide_Web" target="_blank">Web</a></li>
+    </ul>
+  </nav>
+
+  <a href="mailto:marcio.torres@riogrande.ifrs.edu.br">Me escreva!</a>
+
+  <a href="tel:994454566">Me ligue!</a>
+
+  <h1>Listas</h1>
+  <!-- ul Unordered List -->
+  <!-- li List Item -->
+  <h2>Lista de Desejos (Livros)</h2>
+  <ul>
+    <li>
+      Tecnologia & Sociedade
+      <ul> <!-- lista aninhada = lista dentro de outra -->
+        <li>Cibercultura. Pierre Levy</li>
+        <li>User Friendly. Cliff Kuang</li>
+        <li>Dez Argumentos Para Você Deletar Agora Suas Redes Sociais. Jason Lanier, Bruno Casotti</li>
+        <li>História da Computação. Wazlawick</li>
+      </ul>
+    </li>
+    <li>
+      Técnicos
+      <ul>
+        <li>Designing Data-Intensive Applications</li>
+        <li>Monolith to Microservices</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Ordem de leitura:</h2>
+  <ol>
+    <li>Redes Sociais</li>
+    <li>User Friendly</li>
+    <li>Cibercultura</li>
+    <li>História</li>
+  </ol>
+
+  <!-- #glossario   # significa ID -->
+
+  <h2 id="glossario">Glossário</h2>
+  <!-- dl Definition List, dt Definition Term, dd Definition Description -->
+  <dl>
+    <dt>Upar</dt>
+    <dd>Carregar algo (arquivo, foto, etc) na internet</dd>
+    <dt>Zipar</dt>
+    <dd>Compactar algo</dd>
+    <dt>Buildar</dt>
+    <dd>Executar um processo de construção de um código</dd>
+  </dl>
+  <a href="#topo">Voltar ao topo</a>
 </body>
 
 </html>
